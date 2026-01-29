@@ -1,26 +1,22 @@
 @import "tailwindcss";
 
+@theme {
+  /* --- MODO CLARO (Inspiración Infinito / Azul) --- */
+  --color-azul-jujutsu: #0047FF;    /* Azul intenso */
+  --color-celeste-suave: #E0F2FE;   /* Celeste cielo muy suave para fondos */
+  --color-infinito: #00264D;        /* Tu azul marino original para contraste */
+
+  /* --- MODO OSCURO / REPORTES (Inspiración Destello Negro / Rojo) --- */
+  --color-vacio-purpura: #0F172A;   /* Negro azulado profundo */
+  --color-destello-rojo: #E11D48;   /* Rojo vibrante tipo Jujutsu */
+  --color-critico: #000000;         /* Negro puro para acentos */
+
+  /* --- ESTADOS DE CÁMARAS --- */
+  --color-falla: #FF0000;           /* Rojo puro */
+  --color-ok: #00D1FF;              /* Celeste neón para cámaras activas */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-celeste-suave); /* Fondo general inspirado en Gojo */
+  color: var(--color-infinito);
 }
